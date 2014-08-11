@@ -1,9 +1,41 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>amh.io</title>
+  <title>amh.io | <!--{title}--></title>
 <body>
+    <div id="container">
+        <div id="nav">
+            <div class="navbar">
+                <button href="#" id="nav-toggle"></button>
+                <!--{navigation}-->
+                <ul class="">
+                    <li>
+                        <a href="/" class="nav-link" title="amh.io">
+                            <span class="icon icon-home">Home</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- /#nav -->
 
+        <div id="page">
+            {page:title}
+            {page:body}
+        </div><!-- /#page -->
+
+        <div id="footer">
+            <div>
+                {page=about:title}
+                {page=about:body}
+            </div>
+            <div id="legal">
+                <ul>
+                    <li>© <a href="http://amh.io">Andrew Hammett</a></li>
+                    <li>
+                </ul>
+            </div>
+        </div><!-- /#footer -->
+    </div><!-- /#container -->
 <script src="/js/app.js"></script>
 </body>
 </html>
